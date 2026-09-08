@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Say voice="Polly.Bianca" language="it-IT">Grazie per aver chiamato Prezzemolo Studio. In questo momento non riusciamo a rispondere. Dopo il segnale puoi lasciare un messaggio: la registrazione viene conservata e ti richiamiamo appena possibile.</Say>
-  <Record maxLength="120" timeout="5" playBeep="true" channels="single" format="mp3" action="https://prezzemolo-studio.github.io/centralino-fallback/chiudi.xml" method="GET"/>
+  <Record maxLength="120" timeout="5" playBeep="true" channels="single" format="mp3" action="https://centralino.prezzemolostudio.it/chiudi.xml" method="GET"/>
 </Response>
