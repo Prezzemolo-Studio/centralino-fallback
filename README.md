@@ -27,6 +27,10 @@ Il prezzo è che, durante un disservizio, il telefono non suona. La chiamata per
 
 La registrazione resta su Telnyx: la notifica la manda n8n, che in quel momento è giù. **Quando n8n torna su, vanno controllate le registrazioni orfane.**
 
+## Perché GET e non POST
+
+GitHub Pages serve solo file: a una richiesta `POST` risponde `405 Not Allowed`, **misurato**. Per questo l'`action` del `<Record>` è in `GET`, e per questo l'applicazione TeXML deve avere `voice_method` a `get`: il fallback eredita il metodo dell'URL principale, e con `post` non verrebbe mai servito.
+
 ## Come si modifica
 
 Un commit su `main`. GitHub Pages ripubblica da solo in un minuto. Dopo ogni modifica, riascoltare il messaggio chiamando il numero con n8n spento: è l'unico modo di sapere se funziona.
