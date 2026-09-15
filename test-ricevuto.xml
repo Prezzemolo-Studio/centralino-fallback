@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="Telnyx.KokoroTTS.if_sara" language="it-IT">Tasto ricevuto.</Say>
+  <Hangup/>
+</Response>
